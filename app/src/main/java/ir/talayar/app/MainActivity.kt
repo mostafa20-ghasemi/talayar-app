@@ -28,17 +28,16 @@ import okhttp3.Request
 import org.json.JSONObject
 import java.util.concurrent.TimeUnit
 
-val Gold = Color(0xFFD4AF37)
-val BgDark = Color(0xFF0E1116)
-val CardBg = Color(0xFF161B22)
-val BuyGreen = Color(0xFF16A34A)
-val SellRed = Color(0xFFDC2626)
-val WaitAmber = Color(0xFFF59E0B)
-val TextGray = Color(0xFF8B96A8)
-val TextLight = Color(0xFFE6EAF2)
 
 data class Analysis(
-    val direction: String,
+ val Gold = Color(0xFFFFD700)
+val BgDark = Color(0xFF1A2030)
+val CardBg = Color(0xFF293242)
+val BuyGreen = Color(0xFF4ADE80)
+val SellRed = Color(0xFFFF6B6B)
+val WaitAmber = Color(0xFFFFC94D)
+val TextGray = Color(0xFFC7CFDC)
+val TextLight = Color(0xFFFFFFFF)   val direction: String,
     val confidence: Int,
     val price: Double,
     val reason: String,
