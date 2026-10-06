@@ -24,8 +24,14 @@ jobs:
       with:
         gradle-version: 8.7
 
+    - name: Create local.properties
+      run: echo "sdk.dir=$ANDROID_HOME" > local.properties
+
+    - name: Show SDK path
+      run: echo "ANDROID_HOME=$ANDROID_HOME"
+
     - name: Build APK
-      run: gradle assembleDebug --stacktrace
+      run: gradle assembleDebug --stacktrace --info
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
