@@ -30,16 +30,23 @@ import java.util.concurrent.TimeUnit
 
 
 data class Analysis(
- val Gold = Color(0xFFFFD700)
+ val Gold = 
+val BgDark = 
+val CardBg = 
+val BuyGreen = 
+val SellRed = 
+val WaitAmber = 
+val TextGray = 
+val TextLight =   val direction: String,
+    val confidence: Int,
+    val val Gold = Color(0xFFFFD700)
 val BgDark = Color(0xFF1A2030)
 val CardBg = Color(0xFF293242)
 val BuyGreen = Color(0xFF4ADE80)
 val SellRed = Color(0xFFFF6B6B)
 val WaitAmber = Color(0xFFFFC94D)
 val TextGray = Color(0xFFC7CFDC)
-val TextLight = Color(0xFFFFFFFF)   val direction: String,
-    val confidence: Int,
-    val price: Double,
+val TextLight = Color(0xFFFFFFFF)price: Double,
     val reason: String,
     val entry: String,
     val sl: String,
